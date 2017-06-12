@@ -4,12 +4,13 @@ body {
 }
 
 * {
-	color:#ffffff;
+	
 	font-size:20px;
 	
 }
 
 #header {
+    color:#ffffff;
     margin:10px;
     padding:5px;
     border-radius:5px;
@@ -18,12 +19,8 @@ body {
 	border: 2px solid #ffffff;
 }
 
-.button {
-    background-color:black;
-    color:black;
-
-}
-#main {
+.main {
+    color:#ffffff;
     margin:10px;
     padding:15px;
     border-radius:5px;
@@ -31,11 +28,9 @@ body {
 	border: 2px solid #ffffff;
 }
 
-.btn {
-    text-align:center;
-}
 
 #footer {
+    color:#ffffff;
     margin:10px;
     padding:10px;
     border-radius:5px;
