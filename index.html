@@ -1,0 +1,112 @@
+<!doctype.html>
+<html>
+<head>
+	
+	<link href="assets/css/style.css" type="text/css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Abel|Abril+Fatface|Cinzel|Comfortaa|Domine|Exo|Josefin+Slab|Montserrat+Subrayada|Roboto+Mono" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+	<title>Train Schedule</title>
+
+</head>
+
+<body>
+
+	<div class ="container">
+
+		<div class="row">
+
+			<div class ="col-md-offset-2 col-md-8">
+
+				<div id="header">
+						<p><h1>Anytime is Train Time</h1></p>
+						<p><h4>Choo Choo. Chee Chee.</h4></p>
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class="row">
+
+			<div class ="col-md-offset-2 col-md-8">
+
+				<div id="main">
+				<!-- Current Trains-->
+          		<div class="panel panel-primary">
+
+            		<div class="panel-heading">
+              		<h3 class="panel-title">Current Train Scheduel</h3>
+            		</div>
+
+		            <div class="panel-body">
+		              <table class="table table-hover" id='employee-table'>
+
+		                <thead>
+		                  <tr>
+		                    <th>Employee Name</th>
+		                    <th>Role</th>
+		                    <th>Start Date</th>
+		                    <th>Months Worked</th>
+		                    <th>Monthly Rate ($)</th>
+		                    <th>Total Billed ($)</th>
+		                  </tr>
+
+		                </thead>
+
+		                <tbody>
+		                </tbody>
+
+		              </table>
+		            </div>
+          		</div>
+				</div>
+
+			</div>
+			
+		</div>
+
+		<div class="row">
+
+			<div class ="col-md-offset-2 col-md-8">
+
+				<div id="footer">
+
+					<form>
+
+						<div class="form-group">
+
+    					<label for="trainName">Train Name</label>
+    					<input type="text" class="form-control" id="trainName">
+
+    					<label for="destination">Destination</label>
+    					<input type="text" class="form-control" id="destination">
+
+    					<label for="trainTime">First Train Time (hh:mm - military time)</label>
+    					<input type="text" class="form-control" id="trainTime">
+    					<p>
+    					<label for="frequency">Frequency (min)</label>
+    					<input type="text" class="form-control" id="frequency">
+    					</p>
+    					<p>
+    					<button type="button" id="add-train-btn" type="submit">Submit</button>
+    					</p>
+
+  						</div>
+
+  					</form>
+				</div>
+
+			</div>
+			
+		</div>
+
+	</div>
+
+	<script src="https://www.gstatic.com/firebasejs/4.1.2/firebase.js"></script>
+	<script type="text/javascript" src="assets/javascript/app.js"></script>
+
+</body>
+
+</html>
