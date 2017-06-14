@@ -24,10 +24,10 @@ $("#add-train-btn").on("click", function(event) {
 
   // Creates local "temporary" object for holding train data
   var newTrain = {
-    trName: theTrainName,
-    dest: theDestination,
-    // trTime: theTrainTime,
-    freq: theFrequency
+    trainName: trainName,
+    destination: destination,
+    // trainTime: trainTime,
+    frequency: frequency
   };
 
   // Uploads train data to the database
@@ -51,9 +51,9 @@ $("#add-train-btn").on("click", function(event) {
 database.ref().on("child_added", function(childSnapshot, prevChildKey) {
 
   console.log(childSnapshot.val());
-
+  console.log(prevChildKey);
   // Store everything into a variable.
-  var trainName = childSnapshot.val().name;
+  var trainName = childSnapshot.val().trainName;
   var destination = childSnapshot.val().destination;
   // var trainTime = childSnapshot.val().start;
   var frequency = childSnapshot.val().frequency;
